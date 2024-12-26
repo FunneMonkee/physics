@@ -13,3 +13,7 @@ pub fn coulombs_constant() -> f64 {
 pub fn gravity_force() -> f64 {
     6.67 * 10f64.powi(-11)
 }
+
+pub fn eletrical_vacuum_permittivity() -> f64 {
+    8.85 * 10f64.powi(-12)
+}
