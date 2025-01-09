@@ -6,6 +6,10 @@ pub fn proton_mass() -> f64 {
     1.67 * 10f64.powi(-27)
 }
 
+pub fn eletron_mass() -> f64 {
+    9.109 * 10f64.powi(-31)
+}
+
 pub fn coulombs_constant() -> f64 {
     8.99 * 10f64.powi(9)
 }
