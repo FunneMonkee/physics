@@ -6,7 +6,7 @@ pub fn proton_mass() -> f64 {
     1.67 * 10f64.powi(-27)
 }
 
-pub fn eletron_mass() -> f64 {
+pub fn electron_mass() -> f64 {
     9.109 * 10f64.powi(-31)
 }
 

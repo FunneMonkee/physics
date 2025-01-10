@@ -1,5 +1,5 @@
-pub mod charges;
-pub mod forces;
-pub mod fields;
 pub mod eletric_potencial;
-pub mod trignometry;
+pub mod eletrical_current;
+pub mod fields;
+pub mod forces;
+pub mod geometry;

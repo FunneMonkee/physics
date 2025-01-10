@@ -1,7 +1,7 @@
 use std::ops::Neg;
 
 use crate::{
-    constants::constants::{elemental_charge, eletron_mass, proton_mass},
+    constants::constants::{electron_mass, elemental_charge, proton_mass},
     formulas::{
         eletric_potencial::{
             area_from_capacitor_permittivity_distance, eletric_field, eletric_field_force,
@@ -13,25 +13,15 @@ use crate::{
             work_from_a_to_b_from_eletric_field,
         },
         forces::{force_between_two_charges, gravitational_force},
-        trignometry::to_radians,
+        geometry::to_radians,
     },
     units::unit::Unit,
 };
 
-fn answer(question: &str, sub_question: &str, number: f64, unit: &str) -> () {
-    let mut out_number = number.to_string();
-
-    if out_number.len() > 4 {
-        out_number = format!("{:e}", number);
-    }
-
-    println!(
-        "{} {} Answer: {} {}",
-        question, sub_question, out_number, unit
-    );
-}
+use super::helper::answer;
 
 pub fn solve() {
+    println!("First Theme");
     ex1();
     ex2();
     ex5();
@@ -340,7 +330,7 @@ fn ex15() {
             "d)",
             velocity_from_kinetic_energy_and_mass(
                 potencial_energy(elemental_charge(), potencial_difference),
-                eletron_mass(),
+                electron_mass(),
             ),
             "m/s",
         );

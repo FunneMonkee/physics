@@ -1,10 +1,9 @@
-use exercises::first_theme::solve;
-
-mod formulas;
-mod units;
 mod constants;
 mod exercises;
+mod formulas;
+mod units;
 
 fn main() {
-    solve()
+    exercises::first_theme::solve();
+    exercises::second_theme::solve();
 }
