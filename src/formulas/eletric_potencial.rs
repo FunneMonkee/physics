@@ -14,6 +14,10 @@ pub fn eletric_potencial(charge: f64, radius: f64) -> f64 {
     coulombs_constant() * charge / radius
 }
 
+pub fn eletric_potencial_p(charge: f64, eletric_potencial: f64) -> f64 {
+    charge * eletric_potencial
+}
+
 pub fn work_from_a_to_b(charge: f64, eletric_potencial_a: f64, eletric_potencial_b: f64) -> f64 {
     charge * potencial_difference(eletric_potencial_a, eletric_potencial_b)
 }
